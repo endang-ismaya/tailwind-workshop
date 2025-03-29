@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
+    </style>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --color-blackchime: #000000;
+
+        /* --spacing: 16px; */
+        --my-margin: 23px;
+
+        --font-boldonse: "Boldonse", system-ui;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header>
+      <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white font-bold text-xl">Eimdev</div>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-blue-300">Home</a>
+            <a href="#" class="text-gray-300 hover:text-blue-300">About</a>
+            <a href="#" class="text-gray-300 hover:text-blue-300">Services</a>
+            <a href="#" class="text-gray-300 hover:text-blue-300">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Container -->
+    <main class="container bg-white-600 text-black mx-auto mt-15 flex-grow">
+      <h1 class="font-boldonse text-2xl text-center tracking-[1.2em]">
+        Learn Tailwind CSS
+      </h1>
+
+      <p class="mt-(--my-margin) text-justify text-xl/8 tracking-wider">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+        molestias neque, sit ipsum aliquam provident vel debitis qui commodi
+        fugit temporibus, consequuntur eum ipsa corporis sed vero consectetur
+        consequatur hic reiciendis officia minima alias. Debitis,
+        necessitatibus. Placeat tempora dolore ea similique amet non, corrupti
+        recusandae ad necessitatibus modi eveniet exercitationem itaque quod ut
+        consequuntur expedita totam deserunt accusamus cum ex eos explicabo? Rem
+        assumenda consectetur dignissimos explicabo soluta cum quibusdam iusto
+        voluptates. Quasi quidem molestias reiciendis, molestiae voluptatem
+        velit expedita aspernatur ad earum similique amet quod? Id ipsam
+        deleniti nihil, at velit quam molestias tempore ullam, saepe placeat
+        illo quasi, architecto labore reiciendis aut dolorem quisquam non
+        molestiae similique laborum aspernatur! Cumque quam et ipsa distinctio
+        expedita? Nam debitis, minima unde esse non earum modi aperiam sint et,
+        sunt repudiandae? Ad voluptatum accusantium tempore unde, placeat
+        pariatur sequi itaque suscipit dolores neque odit debitis recusandae
+        laboriosam, corporis deserunt libero doloremque?
+      </p>
+
+      <p class="p-[22.5px] bg-gray-300 m-3 italic rounded">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora,
+        natus maxime distinctio nobis error libero? Nesciunt cum atque incidunt?
+        At ipsum rem in facilis officia atque id, assumenda quas.
+      </p>
+
+      <p
+        class="mt-11 text-right text-blue-500 bg-orange-1 rounded font-bold bg-gradient-to-tr from-blue-50 to-green-200 p-3"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+        laborum?
+      </p>
+
+      <p
+        class="mt-6 font-mono text-xs/3 font-[100] bg-gradient-to-b from-red-200 to-yellow-500"
+      >
+        Lorem ipsum dolor sit
+        <span
+          class="font-extrabold italic text-lg/8 line-through decoration-blue-400"
+          >amet consectetur adipisicing elit</span
+        >. Rerum quod provident officiis voluptatibus praesentium eius fugit
+        quae ad, deleniti, error earum sint? Culpa itaque nesciunt molestias,
+        asperiores maiores temporibus distinctio! Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Minus accusamus aperiam iusto aspernatur
+        cupiditate quibusdam unde obcaecati at est placeat, quae suscipit
+        ratione delectus maxime. Nostrum, quam vitae! Necessitatibus aspernatur
+        dicta magnam ut quibusdam amet sed excepturi nobis, repellendus, aliquam
+        error eveniet reprehenderit ipsum libero commodi maxime. Voluptates
+        quisquam placeat consectetur, fugit non sed, maxime incidunt numquam
+        necessitatibus sapiente maiores illum nam libero, eveniet explicabo
+        aliquam qui ipsam dolor aspernatur tenetur laboriosam accusamus a
+        voluptatum? In alias architecto illum consequatur, officiis itaque vero
+        hic quae officia quidem asperiores perferendis eligendi voluptatum
+        ratione vitae esse dignissimos doloribus saepe dolorum non maiores.
+      </p>
+
+      <p class="mt-4 bg-conic from-red-500 via-orange-500 to-yellow-500 px-2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo laborum
+        quidem quae soluta neque. Similique cupiditate libero numquam cum sunt
+        doloribus enim praesentium nesciunt, nisi voluptas neque harum, vitae
+        debitis?
+      </p>
+
+      <!-- Borders -->
+      <div class="flex justify-between">
+        <button
+          class="bg-blue-400 hover:bg-blue-700 text-white px-4 py-2 m-4 rounded-sm"
+        >
+          Left Aliged Button
+        </button>
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-4 rounded cursor-pointer"
+        >
+          Right Aligned Button
+        </button>
+      </div>
+
+      <div class="flex justify-center gap-4">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Left Button
+        </button>
+        <button
+          class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Right Button
+        </button>
+      </div>
+
+      <div class="border-2 border-red-500 rounded-full mt-5 text-center py-4">
+        <p>Border Test</p>
+      </div>
+
+      <div
+        class="bg-blue-400 overflow-y-hidden mt-10 flex justify-between overflow-x-hidden"
+      >
+        <img
+          src="https://images.pexels.com/photos/31346973/pexels-photo-31346973/free-photo-of-misty-lake-scene-with-overhanging-branches.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="https://images.pexels.com/photos/31361239/pexels-photo-31361239/free-photo-of-fresh-strawberries-in-elegant-wine-glass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </main>
+
+    <footer
+      class="bg-black text-white inline-block w-1/1 align-middle p-3 text-center mt-6 text-sm"
+    >
+      &copy;endangismaya.com::2025
+    </footer>
+  </body>
+</html>
