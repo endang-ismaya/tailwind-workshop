@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Hover Effect</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="flex flex-col min-h-screen">
+      <h1 class="mx-auto font-bold my-10 text-4xl">Card Hover Effect</h1>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 my-10 lg:mx-20"
+      >
+        <div
+          class="relative group bg-gradient-to-b from-pink-300 to-red-500 h-64 rounded-xl overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1544979407-1204ff29f490?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW5kb25lc2lhJTIwc2VhfGVufDB8fDB8fHww"
+            alt="raja ampat"
+            class="w-full h-full object-cover transition-transform duration-500"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center translate-y-full group-hover:translate-y-0 transition-transform duration-500 text-white"
+          >
+            <p class="text-lg font-bold mb-4">Raja Ampat</p>
+            <p class="text-md mb-4 text-center p-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus sequi voluptatibus illum accusamus corrupti tempore
+              sapiente nisi modi placeat quas quam maiores natus facere iusto
+              incidunt quisquam dolore, ipsum odit!
+            </p>
+          </div>
+        </div>
+        <div class="bg-gradient-to-b from-pink-300 to-red-500 h-64"></div>
+        <div class="bg-gradient-to-b from-pink-300 to-red-500 h-64"></div>
+      </div>
+    </main>
+  </body>
+</html>
